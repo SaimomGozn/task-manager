@@ -1,12 +1,28 @@
-node_modules
-.next
-out
-build
+# Dependencias Node
+node_modules/
+
+# Next.js e Build
+.next/
+out/
+build/
+coverage/
+
+# OS Logs
 .DS_Store
+npm-debug.log*
+yarn-error.log*
+
+# Variaveis de Ambiente (Seguranca)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 *.env
-*.env.local
-*.env.development.local
-*.env.test.local
-*.env.production.local
-coverage
-package-lock.json
+
+# Terraform (Infraestrutura)
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
